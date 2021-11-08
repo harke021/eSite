@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - the MaPyStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navBar">
+                <div class="logo">
+                    <img src="img/logo2.png" class="small-img" width="50px">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li> <a href="">Home</a></li>
+                        <li> <a href="">About</a></li>
+                        <li> <a href="">Contact</a></li>
+                        <li> <a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="img/cart.png" width="20px">
+                <img src="img/menu.png"  width="20px" class="menu-icon" onclick="menuToggle()">
+            </div>
+        </div>
+
+
+        <!-- -------------- Single Product Details ---------- -->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="img/p details.jpg" width="100%" id="pImg">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="img/p details.jpg" class="smallImg" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/product 02.jpg" class="smallImg" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/product 11.png" class="smallImg" width="100%">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="img/product 05.jpg" class="smallImg" width="100%">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <p>Home / T-shirt by HRX</p>
+                    <H1>Black T-shirt </H1>
+                    <h4>$50.00</h4>
+                    <select>
+                        <option>Select Size</option>
+                        <option>XXL</option>
+                        <option>XL</option>
+                        <option>Large</option>
+                        <option>Medium</option>
+                        <option>Small</option>
+                        <input type="number" value="1">
+                        <a href="" class="btn">Add to cart</a>
+                        <h3>Product Details <i class="fa fa-indent"></i></h3> <br>
+                        <p>Give your summer wardrobe a style upgrade with the HRX Men's 
+                            Active T-shirt. Team it with a pair of shorts for 
+                            your morning workout or a denims for an evening out with the guys.
+                        </p>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------ Title ----------- -->
+        <div class="small-container">
+            <div class="row row-2">
+                <h2>Related Products</h2>
+                <p>View More</p>
+            </div>
+        </div>
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="img/product 02.jpg">
+                <h4>Jordan Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$102.00</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product 04.webp">
+                <h4>Jordan Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$102.00</p>
+            </div>
+            <div class="col-4">
+                <img src="img/product 05.jpg">
+                <h4>Jordan Shoes</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p>$102.00</p>
+            </div>
+        </div>
+    </div>
+    <!-- ............. footer ............... -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="foot-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for android and ios devices</p>
+                    <div class="app-logo">
+                        <img src="img/gplay.png" alt="">
+                        <img src="img/app.png" alt="">
+                    </div>
+                </div>
+                <div class="foot-col-2">
+                    <img src="img/logo2.png" alt="">
+                    <p>Our purpose is to suatsinably make the pleasure and benefits of sports 
+                        accessible to many.
+                    </p>
+                </div>
+                <div class="foot-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+                </div>
+                <div class="foot-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2021 - the MaPyStore</p>
+        </div>
+    </div>
+
+    <!-- --------------- Js for Toggle menu ----------- -->
+
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menuToggle(){
+            if (menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px"
+            }
+            else{
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+    <!-- ---------- Js for Product Gallery ----------- -->
+<script>
+    var pImg = document.getElementById("pImg");
+    var smallImg = document.getElementsByClassName("smallImg");
+    smallImg[0].onclick = function(){
+        pImg.src = smallImg[0].src;
+    }
+    smallImg[1].onclick = function(){
+        pImg.src = smallImg[1].src;
+    }
+    smallImg[2].onclick = function(){
+        pImg.src = smallImg[2].src;
+    }
+    smallImg[3].onclick = function(){
+        pImg.src = smallImg[3].src;
+    }
+</script>
+  
+</body>
+
+</html>

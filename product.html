@@ -5,71 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the MaPyStore</title>
+    <title>All Products - the MaPyStore</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 </head>
 
 <body>
-    <div class="header">
         <div class="container">
             <div class="navBar">
                 <div class="logo">
-                  <a href="index.html">  <img src="img/logo2.png" width="50px"> </a>
+                    <img src="img/logo2.png" width="50px">
                 </div>
                 <nav>
                     <ul id="menuItems">
-                        <li> <a href="index.html">Home</a></li>
-                        <li> <a href="product.html">Products</a></li>
+                        <li> <a href="">Home</a></li>
                         <li> <a href="">About</a></li>
                         <li> <a href="">Contact</a></li>
-                        <li> <a href="account.html">Account</a></li>
+                        <li> <a href="">Account</a></li>
                     </ul>
                 </nav>
-              <a href="cart.html"><img src="img/cart.png" width="20px"> </a>
+                <img src="img/cart.png" width="20px">
                 <img src="img/menu.png" width="20px" class="menu-icon" onclick="menuToggle()">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Give Your Workout <br> A New Style.</h1>
-                    <p>Success isn't always about greatness.It's about
-                        consistency. <br> Consistent hard work gains success, greatness will come...</p>
-                    <a href="" class="btn"> Explore Now &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="img/thug guy.png" height="">
-                </div>
-            </div>
         </div>
-    </div>
-
-
-    <!-- --------------------- Featured Products ---------------------- -->
-
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="img/headphones 2.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/product 4.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="img/product 10.webp">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ---------------- Featured Products --------------->
 
     <div class="small-container">
-        <h2 class="title">Featured Products</h2>
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option> Default Sorting</option>
+                <option>Sort by Popularity</option>
+                <option>Sort by Price</option>
+                <option>Sort by Rating</option>
+                <option>Sort by Sale</option>
+            </select>
+        </div>
         <div class="row">
             <div class="col-4">
-               <a href="pDetails.html"> <img src="img/shoes 2.jpeg"> </a>
-              <a href="pDetails.html">  <h4>Jordan Shoes</h4> </a>
+                <img src="img/shoes 2.jpeg">
+                <h4>Jordan Shoes</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -104,8 +78,6 @@
                 <p>$102.00</p>
             </div>
         </div>
-
-        <h2 class="title">Latest Products</h2>
         <div class="row">
             <div class="col-4">
                 <img src="img/product 02.jpg">
@@ -182,112 +154,14 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <!-- -------------- Offer ----------- -->
-
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="img/mi smart band.jpg.png" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusively Available on MaPyStore</p>
-                    <h1>Mi Smart Band 4</h1>
-                    <small>The Mi Smart Band 4 features a 39.9% larger ( than Mi Band 3 )
-                        AMOLED coloue full-torch dispaly with adjustable brightness, so
-                        everything is clear as can be.
-                    </small> <br>
-                    <a href="" class="btn">Buy Now &#8594;</a>
-                </div>
-            </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
         </div>
     </div>
-
-    <!-- ------------------- Testimonial ------------ -->
-
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda corporis perspiciatis
-                        cum, quod praesentium modi vel laboriosam voluptas rem molestiae, labore numquam optio quae
-                        cupiditate soluta illo et voluptatem eum quidem omnis mollitia doloremque. In officia magnam
-                        aliquam animi cumque voluptatem impedit repudiandae, vero iusto! Doloribus distinctio dolore
-                        modi!</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <img src="img/user1.jpg" alt="">
-                        <h3>Tom Shekhar</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda corporis perspiciatis
-                        cum, quod praesentium modi vel laboriosam voluptas rem molestiae, labore numquam optio quae
-                        cupiditate soluta illo et voluptatem eum quidem omnis mollitia doloremque. In officia magnam
-                        aliquam animi cumque voluptatem impedit repudiandae, vero iusto! Doloribus distinctio dolore
-                        modi!</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <img src="img/user 2.jpg" alt="">
-                        <h3>Jack Maa</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora assumenda corporis perspiciatis
-                        cum, quod praesentium modi vel laboriosam voluptas rem molestiae, labore numquam optio quae
-                        cupiditate soluta illo et voluptatem eum quidem omnis mollitia doloremque. In officia magnam
-                        aliquam animi cumque voluptatem impedit repudiandae, vero iusto! Doloribus distinctio dolore
-                        modi!</p>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="far fa-star"></i>
-                        </div>
-                        <img src="img/user3.jpg" alt="">
-                        <h3>Chyakhuri</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--     Brands  -->
-    <div class="brands">
-        <h3 class="title"> Our Sponser</h3>
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="img/coke.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="img/rollex.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="img/paypal.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="img/nike.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- ............. footer ............... -->
     <div class="footer">
         <div class="container">
@@ -329,7 +203,6 @@
             <p class="copyright">Copyright &copy; 2021 - the MaPyStore</p>
         </div>
     </div>
-
 
     <!-- --------------- Js for Toggle menu ----------- -->
 

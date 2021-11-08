@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - the MaPyStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+        <div class="container">
+            <div class="navBar">
+                <div class="logo">
+                    <img src="img/logo2.png" class="small-img" width="50px">
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li> <a href="">Home</a></li>
+                        <li> <a href="">About</a></li>
+                        <li> <a href="">Contact</a></li>
+                        <li> <a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="img/cart.png" width="20px">
+                <img src="img/menu.png"  width="20px" class="menu-icon" onclick="menuToggle()">
+            </div>
+        </div>
+
+        <!-- .............. account page ............. -->
+
+        <div class="account-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="img/thug guy.png" alt="" width="100%">
+                    </div>
+                    <div class="col-2">
+                        <div class="form-container">
+                            <div class="form-btn">
+                                <span onclick="login()">login</span>
+                                <span onclick="register()">register</span>
+                                <hr id="indicater">
+                            </div>
+                            <form id="loginForm">
+                                <input type="text" placeholder="username">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn"> login</button>
+                                <a href="">Forget password?</a>
+                            </form>
+                            <form id = "rgForm">
+                                <input type="text" placeholder="username">
+                                <input type="email" placeholder="email">
+                                <input type="password" placeholder="password">
+                                <button type="submit" class="btn"> Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- ............. footer ............... -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="foot-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for android and ios devices</p>
+                    <div class="app-logo">
+                        <img src="img/gplay.png" alt="">
+                        <img src="img/app.png" alt="">
+                    </div>
+                </div>
+                <div class="foot-col-2">
+                    <img src="img/logo2.png" alt="">
+                    <p>Our purpose is to suatsinably make the pleasure and benefits of sports 
+                        accessible to many.
+                    </p>
+                </div>
+                <div class="foot-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Posts</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+                </div>
+                <div class="foot-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2021 - the MaPyStore</p>
+        </div>
+    </div>
+
+    <!-- --------------- Js for Toggle menu ----------- -->
+
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menuToggle(){
+            if (menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px"
+            }
+            else{
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+<!-- ............. Js for Toggle Form ............./ -->
+
+<script src="javascript.js"></script>
+  
+</body>
+
+</html>
